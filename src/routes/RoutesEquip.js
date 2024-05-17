@@ -7,8 +7,6 @@ import equipControllers from "../controllers/equipcontrollers.js"
 const routes = express.Router();
 
 routes.get("/equipamentos",equipControllers.listarestoque );
-
-
 routes.post("/equipamentos",equipControllers.cadastroequipamentos)
 routes.put("/equipamentos/:id", equipControllers.atualizarestoque)
 
